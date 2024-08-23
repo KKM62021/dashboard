@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .profile-header {
+      background: #f8f9fa;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .profile-img {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Freelance Connect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profile Overview -->
+  <div class="container mt-4">
+    <div class="profile-header text-center">
+      <img src="profile.png" alt="Profile Picture" class="profile-img mb-3">
+      <h2>John Doe</h2>
+      <p class="lead">Freelancer specializing in web development and design.</p>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h3>Ongoing Projects</h3>
+        <ul class="list-group">
+          <li class="list-group-item">Project A</li>
+          <li class="list-group-item">Project B</li>
+          <li class="list-group-item">Project C</li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <h3>Recent Activity</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Applied for Project X</a>
+          <a href="#" class="list-group-item list-group-item-action">Received new message from Client Y</a>
+          <a href="#" class="list-group-item list-group-item-action">Completed Task Z</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
